@@ -23,7 +23,11 @@ def create_api():
 
 def main():
     api = create_api()
-    api.update_status(status="Hello")
+
+    birthday_boy_stats = birthday_scraper.birthday_boy_stats()
+    status = "Happy birthday to " + birthday_boy_stats["name"] + "!"
+
+    api.update_status(status=status)
 
 if __name__ == "__main__":
     main()

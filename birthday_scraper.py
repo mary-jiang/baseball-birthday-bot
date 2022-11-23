@@ -34,37 +34,37 @@ def birthday_boy_stats():
 
     # fill in all the stats from baseball reference
     stats["name"] = chosen_row.find("td", attrs={"data-stat":"player"}).text
-    stats["experience"] = int(chosen_row.find("td", attrs={"data-stat":"experience"}).text)
-    stats["year_min"] = int(chosen_row.find("td", attrs={"data-stat":"year_min"}).text)
-    stats["year_max"] = int(chosen_row.find("td", attrs={"data-stat":"year_max"}).text)
-    stats["WAR"] = float(chosen_row.find("td", attrs={"data-stat":"WAR"}).text)
-    stats["allstar_games"] = int(chosen_row.find("td", attrs={"data-stat":"allstar_games"}).text)
-    stats["G"] = int(chosen_row.find("td", attrs={"data-stat":"G"}).text)
-    stats["AB"] = int(chosen_row.find("td", attrs={"data-stat":"AB"}).text)
-    stats["R"] = int(chosen_row.find("td", attrs={"data-stat":"R"}).text)
-    stats["H"] = int(chosen_row.find("td", attrs={"data-stat":"H"}).text)
-    stats["HR"] = int(chosen_row.find("td", attrs={"data-stat":"HR"}).text)
-    stats["RBI"] = int(chosen_row.find("td", attrs={"data-stat":"RBI"}).text)
-    stats["SB"] = int(chosen_row.find("td", attrs={"data-stat":"SB"}).text)
-    stats["BB"] = int(chosen_row.find("td", attrs={"data-stat":"BB"}).text)
-    stats["batting_avg"] = float(chosen_row.find("td", attrs={"data-stat":"batting_avg"}).text)
-    stats["onbase_perc"] = float(chosen_row.find("td", attrs={"data-stat":"onbase_perc"}).text)
-    stats["slugging_perc"] = float(chosen_row.find("td", attrs={"data-stat":"slugging_perc"}).text)
-    stats["onbase_plus_slugging"] = float(chosen_row.find("td", attrs={"data-stat":"onbase_plus_slugging"}).text)
-    stats["onbase_plus_slugging_plus"] = int(chosen_row.find("td", attrs={"data-stat":"onbase_plus_slugging_plus"}).text)
-    stats["W"] = int(chosen_row.find("td", attrs={"data-stat":"W"}).text)
-    stats["L"] = int(chosen_row.find("td", attrs={"data-stat":"L"}).text)
-    stats["earned_run_avg"] = float(chosen_row.find("td", attrs={"data-stat":"earned_run_avg"}).text)
-    stats["earned_run_avg_plus"] = int(chosen_row.find("td", attrs={"data-stat":"earned_run_avg_plus"}).text)
-    stats["whip"] = float(chosen_row.find("td", attrs={"data-stat":"whip"}).text)
-    stats["G_p"] = int(chosen_row.find("td", attrs={"data-stat":"G_p"}).text)
-    stats["GS"] = int(chosen_row.find("td", attrs={"data-stat":"GS"}).text)
-    stats["SV"] = int(chosen_row.find("td", attrs={"data-stat":"SV"}).text)
-    stats["IP"] = float(chosen_row.find("td", attrs={"data-stat":"IP"}).text)
-    stats["H_p"] = int(chosen_row.find("td", attrs={"data-stat":"H_p"}).text)
-    stats["HR_p"] = int(chosen_row.find("td", attrs={"data-stat":"HR_p"}).text)
-    stats["BB_p"] = int(chosen_row.find("td", attrs={"data-stat":"BB_p"}).text)
-    stats["SO_p"] = int(chosen_row.find("td", attrs={"data-stat":"SO_p"}).text)
+    stats["experience"] = chosen_row.find("td", attrs={"data-stat":"experience"}).text
+    stats["year_min"] = chosen_row.find("td", attrs={"data-stat":"year_min"}).text
+    stats["year_max"] = chosen_row.find("td", attrs={"data-stat":"year_max"}).text
+    stats["WAR"] = chosen_row.find("td", attrs={"data-stat":"WAR"}).text
+    stats["allstar_games"] = chosen_row.find("td", attrs={"data-stat":"allstar_games"}).text
+    stats["G"] = chosen_row.find("td", attrs={"data-stat":"G"}).text
+    stats["AB"] = chosen_row.find("td", attrs={"data-stat":"AB"}).text
+    stats["R"] = chosen_row.find("td", attrs={"data-stat":"R"}).text
+    stats["H"] = chosen_row.find("td", attrs={"data-stat":"H"}).text
+    stats["HR"] = chosen_row.find("td", attrs={"data-stat":"HR"}).text
+    stats["RBI"] = chosen_row.find("td", attrs={"data-stat":"RBI"}).text
+    stats["SB"] = chosen_row.find("td", attrs={"data-stat":"SB"}).text
+    stats["BB"] = chosen_row.find("td", attrs={"data-stat":"BB"}).text
+    stats["batting_avg"] = chosen_row.find("td", attrs={"data-stat":"batting_avg"}).text
+    stats["onbase_perc"] = chosen_row.find("td", attrs={"data-stat":"onbase_perc"}).text
+    stats["slugging_perc"] = chosen_row.find("td", attrs={"data-stat":"slugging_perc"}).text
+    stats["onbase_plus_slugging"] = chosen_row.find("td", attrs={"data-stat":"onbase_plus_slugging"}).text
+    stats["onbase_plus_slugging_plus"] = chosen_row.find("td", attrs={"data-stat":"onbase_plus_slugging_plus"}).text
+    stats["W"] = chosen_row.find("td", attrs={"data-stat":"W"}).text
+    stats["L"] = chosen_row.find("td", attrs={"data-stat":"L"}).text
+    stats["earned_run_avg"] = chosen_row.find("td", attrs={"data-stat":"earned_run_avg"}).text
+    stats["earned_run_avg_plus"] = chosen_row.find("td", attrs={"data-stat":"earned_run_avg_plus"}).text
+    stats["whip"] = chosen_row.find("td", attrs={"data-stat":"whip"}).text
+    stats["G_p"] = chosen_row.find("td", attrs={"data-stat":"G_p"}).text
+    stats["GS"] = chosen_row.find("td", attrs={"data-stat":"GS"}).text
+    stats["SV"] = chosen_row.find("td", attrs={"data-stat":"SV"}).text
+    stats["IP"] = chosen_row.find("td", attrs={"data-stat":"IP"}).text
+    stats["H_p"] = chosen_row.find("td", attrs={"data-stat":"H_p"}).text
+    stats["HR_p"] = chosen_row.find("td", attrs={"data-stat":"HR_p"}).text
+    stats["BB_p"] = chosen_row.find("td", attrs={"data-stat":"BB_p"}).text
+    stats["SO_p"] = chosen_row.find("td", attrs={"data-stat":"SO_p"}).text
     stats["franchises"] = chosen_row.find("td", attrs={"data-stat":"franchises"}).text
 
     return stats
